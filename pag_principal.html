@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Página principal</title>
+        <style>
+            body{ 
+                margin: 0;
+                background-image: url(camp-nou.jpg);
+                background-size: cover;    
+            }
+            
+            
+            #imgjog{
+               
+                display:flex;
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+            
+            .titulo{
+                border-style: solid;
+                border-width: 10px;
+                border-color: rgba(255, 0, 0, 0.63);
+            }
+
+            .hide{
+                display: none;
+                font-size:xx-large;
+            }
+
+            .button_edit{
+                display: inline-block;
+                width: 300px;
+                height: 500px;
+               
+            }
+
+            img:hover{
+                background-color: rgba(255, 0, 0, 0.425);
+                
+            }
+            a:hover + .hide {
+                display: block;
+                background-color: rgb(230, 15, 15);
+
+            }
+        
+        </style>
+    <body>        
+        <h1 class="titulo" style="color:blue; text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;">Jogadores de times</h1>
+      
+            <div id="imgjog">
+                
+                    <div class="button_edit">
+                        <a href="pag_jogadores.html"><img src="toni.png" width="52%"></a>
+                        <p class="hide">Página de jogadores</p>
+                    </div>
+
+                    <div class="button_edit">
+                        <a href="pag_times.html"><img src="jg4.png" width="87%"></a>
+                        <p class="hide">Página de times</p>
+                    </div>
+
+                    <div class="button_edit">
+                        <a href="pag_contratações.html"><img src="jg5.png" width="60%"></a>
+                        <p class="hide">Página de contratações</p>
+                    </div>
+
+                    <div class="button_edit">
+                        <a href="pag_relatorios.html"><img src="ney.png" width="95%"></a>
+                        <p class="hide">Página de relatórios</p>
+                    </div>
+
+                    <div class="button_edit" id="sair">
+                        <a href="pag_principal.html"><img src="iniesta.png" width="80%"></a>
+                        <p class="hide">Sair</p>
+                    </div>
+                
+            </div>
+    </body>
+</html>

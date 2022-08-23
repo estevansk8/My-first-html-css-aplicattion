@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Página de times</title>
+        <style>
+            body{
+                margin: 0px;
+                background-image: url(camp-nou.jpg);
+                background-size: cover;
+            }
+            
+            .titulo{
+                border-style: solid;
+                border-width: 10px;
+                border-color: rgba(255, 0, 0, 0.733);
+            }
+            nav{
+                background-color: rgba(255, 0, 0, 0.514);
+                height: 100px;
+                font-size: 25px;
+                
+            }
+            #barra{
+                display: flex;
+                padding-left: 10%;
+            }
+            a{
+                text-decoration: none;
+            }
+            
+            #barralat1{
+                background-color: rgba(25, 0, 255, 0.315);
+                padding: 5px;
+                margin: 50px 10px 10px 10px;
+                width: 650px;
+                font-size:large;
+                color: white;
+                
+                
+            }
+            #barralat2{
+                background-color: rgba(25, 0, 255, 0.315);
+                padding: 15px;
+                margin: 50px 10px 10px 10px;
+                width: 650px;
+                font-size:large;
+                color: white;
+                
+            }
+
+        </style>
+    </head>
+    <body>  
+        <h1 class="titulo" style="color:blue; text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;">Página de times</h1>
+        <nav>
+            <br>
+            <div id="barra">
+                <a style="color: white;" href="pag_jogadores.html">Página jogadores</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: white;" href="pag_contratações.html">Página contratações</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: white;" href="pag_relatorios.html">Página relatórios</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: white;" href="pag_principal.html">Sair</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="Corinthians_logo.png" width="50%" >
+            </div>
+        </nav>
+        <div id="conteudo">
+            <div id="barralat1">
+                <h1 style="text-align: center;">Incluir time</h1>
+                <form > 
+                    <label for="cod">Código do time:</label><br>
+                    <input type="text" id="cod"><br><br>
+                    <label for="nome">Nome do time:</label><br>
+                    <input type="text" id="nome"><br><br>
+                    <label for="fund">Data de fundação do time:</label>
+                    <input type="date" id="fund"> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="logr">Logradouro:</label>
+                    <input type="text" id="logr"><br><br>
+                    <label for="nmr">Número:</label><br>
+                    <input type="text" id="nmr">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="est">Estado: </label>
+                    <select id="est">
+                        <optgroup label="Sul">
+                            <option>Rio Grande do Sul</option>
+                            <option>Santa Catarina</option>
+                            <option>Paraná</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option>São Paulo</option>
+                            <option>Minas Gerais</option>
+                            <option>Rio de Janeiro</option>
+                            <option>Espirito Santo</option>
+
+                        </optgroup>
+                        <optgroup label="Centro Oeste">
+                            <option>Distrito Federal</option>
+                            <option>Goias</option>
+                            <option>Mato Grosso</option>
+                            <option>Mato Grosso do Sul</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                            <option>Alagoas</option>
+                            <option>Bahia</option>
+                            <option>Ceará</option>
+                            <option>Maranhão</option>
+                            <option>Paraiba</option>
+                            <option>Piaui</option>
+                            <option>Pernambuco</option>
+                            <option>Rio Grande do Norte</option>
+                            <option>Sergipe</option>
+
+                        </optgroup>
+                        <optgroup label="Norte">
+                            <option>Acres</option>
+                            <option>Amapá</option>
+                            <option>Amazonas</option>
+                            <option>Pará</option>
+                            <option>Rondônia</option>
+                            <option>Roraima</option>
+                            <option>Tocantins</option>
+
+                        </optgroup>
+                            
+                        
+                    </select><br><br>
+                    <label for="cid">Cidade:</label>
+                    <input type="text" id="alt">&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxleng="3"><br><br>
+                    <label for="tel">Telefones para contato:</label>
+                    <input type="text" id="tel"><br><br>
+                    <label for="fund">Fundadores:</label>
+                    <input type="text" id="fund">
+                    </select><br><br>
+                    
+                </form>
+
+            </div>
+            <div id="barralat2">
+                <h1 style="text-align: center;">Pesquisar Time</h1>
+                <input type="button" value="Listar todos times">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Listar time especifico">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Incluir time">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Alterar time">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Excluir time">
+            </div>
+        </div>
+    </body>
+</html>

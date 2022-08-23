@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Página de times</title>
+        <style>
+            body{
+                margin: 0px;
+                background-image: url(camp-nou.jpg);
+                background-size: cover;
+            }
+            
+            .titulo{
+                border-style: solid;
+                border-width: 10px;
+                border-color: rgba(255, 0, 0, 0.733);
+            }
+            nav{
+                background-color: rgba(255, 0, 0, 0.514);
+                height: 100px;
+                font-size: 25px;
+                
+            }
+            #barra{
+                display: flex;
+                padding-left: 10%;
+            }
+            a{
+                text-decoration: none;
+            }
+            
+            #barralat1{
+                background-color: rgba(25, 0, 255, 0.315);
+                padding: 5px;
+                margin: 50px 10px 10px 10px;
+                width: 650px;
+                font-size:large;
+                color: white;
+                
+                
+            }
+            #barralat2{
+                background-color: rgba(25, 0, 255, 0.315);
+                padding: 15px;
+                margin: 50px 10px 10px 10px;
+                width: 650px;
+                font-size:large;
+                color: white;
+                
+            }
+
+        </style>
+    </head>
+    <body>  
+        <h1 class="titulo" style="color:blue; text-align: center; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ;">Página de contratações</h1>
+        <nav>
+            <br>
+            <div id="barra">
+                <a style="color: white;" href="pag_jogadores.html">Página jogadores</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: white;" href="pag_times.html">Página de times</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: white;" href="pag_relatorios.html">Página relatórios</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a style="color: white;" href="pag_principal.html">Sair</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="din din.png" width="45%" >
+            </div>
+        </nav>
+        <div id="conteudo">
+            <div id="barralat1">
+                <h1 style="text-align: center;">Incluir contratação</h1>
+                <form >
+                    <label for="Pcpf">CPF do jogador:</label><br>
+                    <input type="text" id="Pcpf"><br><br>
+                    <label for="cod">Código do time:</label><br>
+                    <input type="text" id="cod"><br><br>
+                    <label for="data">Data inicio:</label>
+                    <input type="date" id="data"> <br><br>
+                    <label for="sal">Salário:</label>
+                    <input type="sal" id="sal"> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="name">Motivos saída:</label>
+                    <textarea name="Motivos saída"></textarea>             
+                </form>
+
+            </div>
+            <div id="barralat2">
+                <h1 style="text-align: center;">Pesquisar contratação</h1>
+                <input type="button" value="Listar todas contratações">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Listar contratações especificas">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Incluir contratações">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Alterar contratações">&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value="Excluir contratações">
+            </div>
+        </div>
+    </body>
+</html>
